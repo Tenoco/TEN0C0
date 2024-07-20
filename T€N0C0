@@ -6,7 +6,7 @@
     <title>T€N0C0 - Portfolio</title>
     <style>
         body {
-            background: url('{{ url_for('static', filename='background.jpg') }}') no-repeat center center fixed;
+            background: url('{{ url_for(filename='background.jpg') }}') no-repeat center center fixed;
             background-size: cover;
             color: #ffffff;
             font-family: 'Courier New', Courier, monospace;
@@ -77,7 +77,7 @@
     <div class="container">
         <header>
             <h1>
-                <img src="{{ url_for('static', filename='image.jpg') }}" alt="T€N0C0 Logo">
+                <img src="{{ url_for(filename='image.jpg') }}" alt="T€N0C0 Logo">
                 T€N0C0
             </h1>
             <p>Pioneering smart technologies for a connected world.</p>
