@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T€N0C0 - Portfolio</title>
+    <style>
+        body {
+            background: url('{{ url_for('static', filename='background.jpg') }}') no-repeat center center fixed;
+            background-size: cover;
+            color: #ffffff;
+            font-family: 'Courier New', Courier, monospace;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+            background-color: rgba(0, 0, 0, 0.7); /* To make the text readable on the background */
+            border-radius: 10px;
+        }
+
+        header {
+            text-align: center;
+            padding: 50px 0;
+        }
+
+        header h1 {
+            font-size: 3em;
+            color: #00aaff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        header h1 img {
+            border-radius: 15px; /* Adjusted for squircle shape */
+            width: 60px; /* Adjust width as needed */
+            height: 60px; /* Adjust height as needed */
+            margin-right: 20px; /* Space between logo and text */
+        }
+
+        header p {
+            font-size: 1.2em;
+            color: #bbbbbb;
+        }
+
+        section {
+            margin: 40px 0;
+        }
+
+        section h2 {
+            font-size: 2em;
+            color: #00aaff;
+            margin-bottom: 10px;
+        }
+
+        section p {
+            font-size: 1em;
+            color: #cccccc;
+            line-height: 1.5;
+        }
+
+        a {
+            color: #00aaff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>
+                <img src="{{ url_for('static', filename='image.jpg') }}" alt="T€N0C0 Logo">
+                T€N0C0
+            </h1>
+            <p>Pioneering smart technologies for a connected world.</p>
+        </header>
+        <section>
+            <h2>About Us</h2>
+            <p>T€N0C0 is dedicated to pushing the boundaries of innovation, integrating advanced technology to enhance connectivity across the globe. Our solutions are designed to meet the demands of the modern world, ensuring seamless interaction and efficiency. With a focus on smart technologies, we are committed to driving progress and creating a more connected future.</p>
+        </section>
+        <section>
+            <h2>Our Projects</h2>
+            <p>Here at T€N0C0, we work on a variety of projects that span different sectors and technologies. Each project is crafted with a focus on innovation, efficiency, and the highest quality standards.</p>
+        </section>
+        <section>
+            <h2>Contact</h2>
+            <p>If you'd like to get in touch with us, please reach out via email at <a href="mailto: tenocostudio0@gmail.com">tenocostudio0@gmail.com</a>.</p>
+        </section>
+    </div>
+</body>
+</html>
