@@ -6,7 +6,7 @@
     <title>T€N0C0 - About Us</title>
     <style>
         body {
-            background: url('background.jpg') no-repeat center center fixed;
+            background: url('{{ url_for('static', filename='background.jpg') }}') no-repeat center center fixed;
             background-size: cover;
             color: #ffffff;
             font-family: 'Courier New', Courier, monospace;
@@ -71,16 +71,44 @@
         a:hover {
             text-decoration: underline;
         }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 20px 0;
+            font-size: 1em;
+            color: #ffffff;
+            background-color: #00aaff;
+            border: none;
+            border-radius: 5px;
+            text-align: center;
+            cursor: pointer;
+            font-family: 'Courier New', Courier, monospace; /* Monospace font */
+        }
+
+        .button:hover {
+            background-color: #0088cc;
+        }
+
+        #search-section {
+            display: none;
+        }
     </style>
+    <script>
+        function showSearchSection() {
+            document.getElementById('search-section').style.display = 'block';
+            window.location.hash = '#search-section';
+        }
+    </script>
 </head>
 <body>
     <div class="container">
         <header>
             <h1>
-                <img src="image.jpg" alt="T€N0C0 Logo">
+                <img src="{{ url_for('static', filename='image.jpg') }}" alt="T€N0C0 Logo">
                 T€N0C0
             </h1>
-            <p>Pioneering smart technologies for a connected world with simplicity.</p>
+            <p>Pioneering smart technologies for a connected world.</p>
         </header>
         <section>
             <h2>About Us</h2>
@@ -89,10 +117,24 @@
         <section>
             <h2>Our Projects</h2>
             <p>Here at T€N0C0, we work on a variety of projects that span different sectors and technologies. Each project is crafted with a focus on innovation, efficiency, and the highest quality standards.</p>
+            <button class="button" onclick="showSearchSection()">Learn More About T€N0C0 SEARCH</button>
         </section>
         <section>
             <h2>Contact</h2>
-            <p>If you'd like to get in touch with us, please reach out via email at <a href="mailto:tenocostudio0@gmail.com">tenocostudio0@gmail.com</a>.</p>
+            <p>If you'd like to get in touch with us, please reach out via email at <a href="mailto: tenocostudio0@gmail.com">tenocostudio0@gmail.com</a>.</p>
+        </section>
+        <section id="search-section">
+            <h2>T€N0C0 SEARCH</h2>
+            <p>We are proud to introduce one of our most groundbreaking innovations to date: T€N0C0 SEARCH. This state-of-the-art search tool revolutionizes the way you access information, offering unparalleled integration with a multitude of search engines and a suite of indispensable tools.</p>
+            <p>At the heart of T€N0C0 SEARCH is our cutting-edge AI chatbot, "Mimo," powered by the latest advancements in OpenAI GPT-4 technology. Mimo is meticulously trained on an expansive and ever-evolving database, curated to provide you with the most precise, insightful, and intelligent responses available. Experience the future of search with T€N0C0 SEARCH, where innovation meets excellence.</p>
+            <h3>Key Features:</h3>
+            <ul>
+                <li>Multi-Engine Integration: Access diverse search engines from a single platform.</li>
+                <li>AI Chatbot "Mimo": Get accurate and insightful responses powered by OpenAI GPT-4.</li>
+                <li>Regular Database Updates: Ensures the most up-to-date information.</li>
+                <li>Advanced Filters and Tools: Enhance your search experience with powerful features.</li>
+                <li>Intuitive User Interface: Designed for a seamless and efficient user experience.</li>
+            </ul>
         </section>
     </div>
 </body>
