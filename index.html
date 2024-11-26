@@ -1,147 +1,180 @@
-xperience.</li>
-            </ul>
-        </section>
-    </div>
-</body>
-</html>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>T€N0C0 - About Us</title>
-    <style>
-        body {
-            background: url('background.jpg') no-repeat center center fixed;
-            background-size: cover;
-            color: #ffffff;
-            font-family: 'Courier New', Courier, monospace;
-            margin: 0;
-            padding: 0;
-        }
-
-        .container {
-            padding: 20px;
-            max-width: 800px;
-            margin: auto;
-            background-color: rgba(0, 0, 0, 0.7); /* To make the text readable on the background */
-            border-radius: 10px;
-        }
-
-        header {
-            text-align: center;
-            padding: 50px 0;
-        }
-
-        header h1 {
-            font-size: 3em;
-            color: #00aaff;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        header h1 img {
-            border-radius: 15px; /* Adjusted for squircle shape */
-            width: 60px; /* Adjust width as needed */
-            height: 60px; /* Adjust height as needed */
-            margin-right: 20px; /* Space between logo and text */
-        }
-
-        header p {
-            font-size: 1.2em;
-            color: #bbbbbb;
-        }
-
-        section {
-            margin: 40px 0;
-        }
-
-        section h2 {
-            font-size: 2em;
-            color: #00aaff;
-            margin-bottom: 10px;
-        }
-
-        section p {
-            font-size: 1em;
-            color: #cccccc;
-            line-height: 1.5;
-        }
-
-        a {
-            color: #00aaff;
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-
-        .button {
-            display: inline-block;
-            padding: 10px 20px;
-            margin: 20px 0;
-            font-size: 1em;
-            color: #ffffff;
-            background-color: #00aaff;
-            border: none;
-            border-radius: 5px;
-            text-align: center;
-            cursor: pointer;
-            font-family: 'Courier New', Courier, monospace; /* Monospace font */
-        }
-
-        .button:hover {
-            background-color: #0088cc;
-        }
-
-        #search-section {
-            display: none;
-        }
-    </style>
-    <script>
-        function showSearchSection() {
-            document.getElementById('search-section').style.display = 'block';
-            window.location.hash = '#search-section';
-        }
-    </script>
+    <title>TENOCO - Pioneering Smart Technologies</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>
-                <img src="image.jpg" alt="T€N0C0 Logo">
-                T€N0C0
-            </h1>
-            <p>Pioneering smart technologies for a connected world with simplicity.</p>
-        </header>
-        <section>
-            <h2>About Us</h2>
-            <p>T€N0C0 is dedicated to pushing the boundaries of innovation, integrating advanced technology to enhance connectivity across the globe. Our solutions are designed to meet the demands of the modern world, ensuring seamless interaction and efficiency. With a focus on smart technologies, we are committed to driving progress and creating a more connected future.</p>
+    <div class="app-container">
+        <!-- Navigation -->
+        <nav class="nav-bar">
+            <div class="logo curve-logo">
+                <img src="tenoco-logo.png" alt="TENOCO Logo">
+                <h1>TENOCO</h1>
+            </div>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#ecosystem">Ecosystem</a>
+                <a href="#products">Products</a>
+                <a href="#services">Services</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>
+
+        <!-- Home Section -->
+        <section id="home" class="section">
+            <div class="hero-content">
+                <h2>TENOCO</h2>
+                <p>Pioneering smart technologies for a connected world with simplicity</p>
+                <div class="cta-buttons">
+                    <a href="#ecosystem" class="btn btn-primary">Explore Ecosystem</a>
+                    <a href="#products" class="btn btn-secondary">Our Products</a>
+                </div>
+            </div>
         </section>
-        <section>
-            <h2>Our Projects</h2>
-            <p>Here at T€N0C0, we work on a variety of projects that span different sectors and technologies. Each project is crafted with a focus on innovation, efficiency, and the highest quality standards.</p>
-            <button class="button" onclick="showSearchSection()">Learn More About T€N0C0 SEARCH</button>
+
+        <!-- Services Section -->
+        <section id="services" class="section">
+            <h2>TENOCO Services</h2>
+            <div class="services-grid">
+                <div class="ecosystem-card">
+                    <i class="fas fa-globe"></i>
+                    <h3>Website Creation/Hosting</h3>
+                    <p>Professional website development and reliable hosting solutions tailored to your business needs. From responsive design to secure infrastructure, we ensure your online presence is robust and engaging.</p>
+                    <span class="badge-service">Available</span>
+                </div>
+                <div class="ecosystem-card">
+                    <i class="fab fa-android"></i>
+                    <h3>Android App Creation</h3>
+                    <p>Custom Android app development that brings your unique ideas to life. Our team crafts intuitive, high-performance mobile applications with seamless user experiences and cutting-edge functionality.</p>
+                    <span class="badge-service">Unavailable</span>
+                </div>
+                <div class="ecosystem-card">
+                    <i class="fab fa-telegram"></i>
+                    <h3>Telegram Bot Creation</h3>
+                    <p>Intelligent and interactive Telegram bots designed to enhance communication, automate tasks, and provide seamless user experiences. From customer support to interactive utilities, we develop bots that transform engagement.</p>
+                    <span class="badge-service">Available</span>
+                </div>
+                <div class="ecosystem-card">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3>Telegram Mini-App Creation</h3>
+                    <p>Innovative Telegram Mini-Apps that provide rich, interactive experiences within the Telegram ecosystem. Our mini-apps are lightweight, user-friendly, and designed to maximize engagement and functionality.</p>
+                    <span class="badge-service">Available</span>
+                </div>
+                <div class="ecosystem-card">
+                    <i class="fas fa-palette"></i>
+                    <h3>Graphic Designing</h3>
+                    <p>Creative graphic design services that bring visual storytelling to life. From logo design and branding to marketing materials and digital graphics, we craft visually stunning designs that communicate your brand's essence.</p>
+                    <span class="badge-service">Unavailable</span>
+                </div>
+            </div>
         </section>
-        <section>
-            <h2>Contact</h2>
-            <p>If you'd like to get in touch with us, please reach out via email at <a href="mailto: tenocostudio0@gmail.com">tenocostudio0@gmail.com</a>.</p>
+
+        <!-- Ecosystem Section -->
+        <section id="ecosystem" class="section">
+            <h2>TENOCO Ecosystem</h2>
+            <div class="ecosystem-grid">
+                <div class="ecosystem-card">
+                    <i class="fas fa-network-wired"></i>
+                    <h3>BON Network</h3>
+                    <p>BERK Open Network (BON) is our revolutionary trading platform that enables seamless cryptocurrency transactions using BERKS. With advanced encryption and secure infrastructure, BON provides a robust environment for digital asset management.</p>
+                </div>
+                <div class="ecosystem-card">
+                    <i class="fas fa-gamepad"></i>
+                    <h3>IceBerk</h3>
+                    <p>An innovative crypto game developed by TENOCO where players can earn BERKS through engaging gameplay. Experience the intersection of gaming and blockchain technology with IceBerk's unique earning mechanics.</p>
+                    <div class="card-buttons">
+                        <a href="https://t.me/iceberobot" class="btn btn-secondary open-btn">Open IceBerk Game</a>
+                    </div>
+                </div>
+                <div class="ecosystem-card">
+                    <i class="fas fa-wallet"></i>
+                    <h3>BON Wallet</h3>
+                    <p>A secure and user-friendly digital wallet designed to manage BERKS. Trade, send, and track your cryptocurrency with real-time statistics and advanced security features.</p>
+                    <div class="card-buttons">
+                        <a href="https://t.me/bonwallet_bot" class="btn btn-secondary open-btn">Open BON Wallet</a>
+                    </div>
+                </div>
+            </div>
         </section>
-        <section id="search-section">
-            <h2>T€N0C0 SEARCH</h2>
-            <p>We are proud to introduce one of our most groundbreaking innovations to date: T€N0C0 SEARCH. This state-of-the-art search tool revolutionizes the way you access information, offering unparalleled integration with a multitude of search engines and a suite of indispensable tools.</p>
-            <p>At the heart of T€N0C0 SEARCH is our cutting-edge AI chatbot, "Mimo," powered by the latest advancements in OpenAI GPT-4 technology. Mimo is meticulously trained on an expansive and ever-evolving database, curated to provide you with the most precise, insightful, and intelligent responses available. Experience the future of search with T€N0C0 SEARCH, where innovation meets excellence.</p>
-            <h3>Key Features:</h3>
-            <ul>
-                <li>Multi-Engine Integration: Access diverse search engines from a single platform.</li>
-                <li>AI Chatbot "Mimo": Get accurate and insightful responses powered by OpenAI GPT-4.</li>
-                <li>Regular Database Updates: Ensures the most up-to-date information.</li>
-                <li>Advanced Filters and Tools: Enhance your search experience with powerful features.</li>
-                <li>Intuitive User Interface: Designed for a seamless and efficient user experience.</li>
-            </ul>
+
+        <!-- Products Section -->
+        <section id="products" class="section">
+            <h2>TENOCO Products</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <i class="fas fa-store"></i>
+                    <h3>PJStore</h3>
+                    <p>A comprehensive digital marketplace where users can download and purchase apps and games developed by TENOCO and our diverse developer community. Currently under development, PJStore promises to be a revolutionary platform for digital content.</p>
+                    <span class="badge-dev">Under Development</span>
+                </div>
+                <div class="product-card">
+                    <i class="fas fa-comments"></i>
+                    <h3>T-CHAT</h3>
+                    <p>A free, user-friendly text chat platform with a clean and intuitive interface. T-CHAT enables seamless communication with robust privacy features and a minimalist design.</p>
+                    <span class="badge-dev">Under Development</span>
+                </div>
+                <div class="product-card">
+                    <i class="fas fa-robot"></i>
+                    <h3>MiMO Chatbot</h3>
+                    <p>An intelligent chatbot powered by our proprietary Smart Bot Technology (SBT) 1.0. MiMO assists users by responding to queries and providing helpful information across various domains.</p>
+                    <span class="badge-dev">Under Development</span>
+                </div>
+            </div>
         </section>
+
+        <!-- Technology Section -->
+        <section id="technology" class="section">
+            <h2>Our Technologies</h2>
+            <div class="tech-grid">
+                <div class="tech-card">
+                    <i class="fas fa-code"></i>
+                    <h3>SBT Model</h3>
+                    <p>Smart Bot Technology (SBT) 1.0 is our advanced AI text model capable of solving mathematical problems, summarizing text, and performing complex text operations. This technology forms the backbone of our intelligent systems.</p>
+                    <span class="badge-dev">Under Development</span>
+                </div>
+                <div class="tech-card">
+                    <i class="fas fa-server"></i>
+                    <h3>Tenoco Server</h3>
+                    <p>A secure private network that enables users to connect through a robust VPN. Our server infrastructure ensures maximum security, privacy, and reliable connectivity for all TENOCO services.</p>
+                    <span class="badge-dev">Under Development</span>
+                </div>
+                <div class="tech-card">
+                    <i class="fas fa-telegram"></i>
+                    <h3>PJDev Bot</h3>
+                    <p>A Telegram bot designed to facilitate communication with the TENOCO server. Users can create accounts, back up data for BON, IceBerk, and other services through this innovative communication channel.</p>
+                    <span class="badge-dev">Under Development</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Social Links -->
+        <section id="socials" class="section">
+            <h2>Connect with TENOCO</h2>
+            <div class="social-links">
+                <a href="https://chat.whatsapp.com/GBuG3gad2Le40S5Q8CDTAb" target="_blank" class="social-icon"><i class="fab fa-whatsapp"></i> WhatsApp Community</a>
+                <a href="https://whatsapp.com/channel/0029VaJMAov0QeajHa2s3w1W" target="_blank" class="social-icon"><i class="fab fa-whatsapp"></i> WhatsApp Channel</a>
+                <a href="https://t.me/tenocoofficial" target="_blank" class="social-icon"><i class="fab fa-telegram"></i> Telegram Channel</a>
+                <a href="https://x.com/TEN0C0" target="_blank" class="social-icon"><i class="fab fa-twitter"></i> Twitter</a>
+                <a href="https://youtube.com/@tenoco-official" target="_blank" class="social-icon"><i class="fab fa-youtube"></i> YouTube</a>
+                <a href="https://www.tiktok.com/@ten0c0" target="_blank" class="social-icon"><i class="fab fa-tiktok"></i> TikTok</a>
+                <a href="https://www.facebook.com/profile.php?id=61554654190825" target="_blank" class="social-icon"><i class="fab fa-facebook"></i> Facebook</a>
+                <a href="https://www.instagram.com/tenoco0" target="_blank" class="social-icon"><i class="fab fa-instagram"></i> Instagram</a>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2024 TENOCO. All Rights Reserved.</p>
+            <p>TENOCO - Pioneering smart technologies for a connected world with simplicity</p>
+        </footer>
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
